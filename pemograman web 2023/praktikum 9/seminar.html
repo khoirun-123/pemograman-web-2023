@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regist seminar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<form>
+  <div class="form-group row">
+    <label for="Nama Belakang" class="col-4 col-form-label">Nama Lengkap</label> 
+    <div class="col-8">
+      <input id="Nama Belakang" name="Nama Belakang" placeholder="Masukan Nama Panggilan" type="text" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Tempat_lahir" class="col-4 col-form-label">Tempat lahir</label> 
+    <div class="col-8">
+      <input id="Tempat_lahir" name="Tempat_lahir" placeholder="Masukan tempat lahir" type="text" required="required" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Tanggal_lahir " class="col-4 col-form-label">Tanggal lahhir</label> 
+    <div class="col-8">
+      <input id="Tanggal_lahir " name="Tanggal_lahir " placeholder="Masukan tanggal lahir" type="date" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Jenis kelamin</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Jenis_kelamin" id="Jenis_kelamin_0" type="radio" class="custom-control-input" value="Pria" required="required"> 
+        <label for="Jenis_kelamin_0" class="custom-control-label">Pria</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Jenis_kelamin" id="Jenis_kelamin_1" type="radio" class="custom-control-input" value="Wanita" required="required"> 
+        <label for="Jenis_kelamin_1" class="custom-control-label">Wanita</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Email" class="col-4 col-form-label">Email</label> 
+    <div class="col-8">
+      <input id="Email" name="Email" placeholder="masukan Email" type="email" class="form-control" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Status</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Status" id="Status_0" type="radio" class="custom-control-input" value="Mahasiswa"> 
+        <label for="Status_0" class="custom-control-label">Mahasiswa</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Status" id="Status_1" type="radio" class="custom-control-input" value="Karyawan"> 
+        <label for="Status_1" class="custom-control-label">Karyawan</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Status" id="Status_2" type="radio" class="custom-control-input" value="Pelajar"> 
+        <label for="Status_2" class="custom-control-label">Pelajar</label>
+      </div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

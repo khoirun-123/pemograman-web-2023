@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Alamat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .address-container {
+      background-color: yellowgreen;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .address-container h2 {
+      text-align: center;
+    }
+    .address-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .address-container label {
+      margin-bottom: 8px;
+    }
+    .address-container input[type="text"],
+    .address-container input[type="number"],
+    .address-container textarea {
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .address-container input[type="submit"] {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .address-container input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="address-container">
+  <h2>Form Alamat</h2>
+  <form action="/proses_alamat" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required><br>
+    
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat" rows="4" required></textarea><br>
+    
+    <label for="kota">Kota:</label>
+    <input type="text" id="kota" name="kota" required><br>
+    
+    <label for="kodepos">Kode Pos:</label>
+    <input type="text" id="kodepos" name="kodepos" required><br>
+    
+    <input type="submit" value="Simpan Alamat">
+  </form>
+</div>
+
+</body>
+</html>

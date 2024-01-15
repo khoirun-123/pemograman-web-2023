@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Barang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130vh;
+    }
+    .checkout-container {
+      background-color: yellowgreen;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .checkout-container h2 {
+      text-align: center;
+    }
+    .checkout-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .checkout-container label {
+      margin-bottom: 8px;
+    }
+    .checkout-container input[type="text"],
+    .checkout-container input[type="number"] {
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .checkout-container input[type="submit"] {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .checkout-container input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+     
+    img {
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+<div class="checkout-container">
+  <h2>Checkout Barang</h2>
+  <div class="card m-5">
+    <img src="laptop.png" class="card-img-top" style="width: 150px;">
+    <div class="card-body">
+      <h5 class="card-title">Laptop gaming asus Rog G56J</h5>
+      <p class="card-text">Bergaransi, jaminan rusak kami ganti
+        Proses klaim garansi mudah, bisa melalui chat
+        Melayani penjualan offline maupun online
+        Sebelum kami jual atau kirim.</p>
+        <h3>Rp 14.149.000</h3>
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required><br>
+        
+        <div class="card m-5">
+          <img src="hp idaman.jpg" class="card-img-top" style="width: 150px;">
+          <div class="card-body">
+            <h5 class="card-title">Asus rog phone 7</h5>
+            <p class="card-text">Asus ROG Phone Series | ROG Phone 7 12/256 8/256 Ultimate 16GB 512GB | ROG Phone 6 12/256 8/256 Pro 18/512 - Snapdragon Gaming Baru Original Garansi Resmi
+              Barang Baru, Original, Segel
+              Garansi Resmi Asus Indonesia 1 Tahun</p>
+              <h3>Rp 10.000.000</h3>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+    
+    <label for="jumlah">Jumlah:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" required><br>
+    
+    <label for="alamat_pengiriman">Alamat Pengiriman:</label>
+    <textarea id="alamat_pengiriman" name="alamat_pengiriman" rows="4" required></textarea><br>
+    
+    <input type="submit" value="Proses Pembelian">
+  </form>
+</div>
+
+</body>
+</html>

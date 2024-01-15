@@ -1,0 +1,41 @@
+nav {
+    background-color: slategrey;
+    width: 250px;
+    height: 650px;
+}
+
+header {
+    background-color: orchid;
+    display: flex;
+    align-items: start;
+    width: 1150px;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    background-color: aqua;
+    width: 900px;
+    height: 450px;
+}
+
+aside{
+    background-color: slateblue;
+    height: 450px;
+    width: 250px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    background-color: orchid;
+    display: flex;
+    width: 1150px;
+    height: 100px;
+}
